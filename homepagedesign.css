@@ -1,0 +1,131 @@
+
+h1 {
+	font-family: Afacad Flux, sans-serif;
+	font-weight: bold;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+
+h2 {
+	font-family: Afacad Flux, sans-serif;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: Afacad Flux, sans-serif;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+p {
+	font-family: Afacad Flux, sans-serif;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+
+#intro {
+	border-style: solid;
+	border-color: #62758b;
+	border-radius: 12px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 100px;
+	padding-bottom: 125px;
+
+}
+
+.last {
+	margin-bottom: 200px;
+}
+
+.indent {
+	margin-top: 100px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title {
+	box-align: center;
+	padding-right: 509px;
+	height: 460px;
+	background-image: url(Images/swampybg.png);
+	background-size: contain;
+	border-width: 0px;
+	max-width: 100%;
+}
+
+#what {
+	float: right;
+	width: 400px;
+	margin-left: 100px;
+}
+
+#reference {
+	width: 100px;
+	position: absolute;
+	bottom: 300px;
+	right: 200px;
+	opacity: 30%;
+}
+
+#waterscarce {
+	width: 450px;
+	float: left;
+	margin-right: 25px;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1f98e2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+  }
+  
+.navbar li {
+	float: left;
+}
+  
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Afacad Flux, sans-serif;
+}
+  
+.navbar li a:hover {
+	background-color: #0f50c1;
+}
+
+.active {
+	background-color: #2962c6;
+}
+
+footer {
+	display: block;
+	background-color: #0e2c60;
+	text-align: center;
+	color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

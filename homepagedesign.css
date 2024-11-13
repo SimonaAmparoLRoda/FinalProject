@@ -1,17 +1,8 @@
-
-h1 {
+h1, h2{
 	font-family: Afacad Flux, sans-serif;
 	font-weight: bold;
 	margin-left: 100px;
 	margin-right: 100px;
-}
-
-
-h2 {
-	font-family: Afacad Flux, sans-serif;
-	margin-left: 100px;
-	margin-right: 100px;
-	font-weight: bold;
 }
 
 h3 {
@@ -37,7 +28,6 @@ p {
 	margin-right: 100px;
 	margin-top: 100px;
 	padding-bottom: 125px;
-
 }
 
 .last {
@@ -48,27 +38,29 @@ p {
 	margin-top: 100px;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
-.title {
+header {
 	box-align: center;
-	padding-right: 509px;
 	height: 460px;
-	background-image: url(Images/swampybg.png);
+	background: url(Images/swampybg.png) repeat;
 	background-size: contain;
 	border-width: 0px;
 	max-width: 100%;
+}
+
+#what:hover {
+	width: 450px;
+}
+
+.logo {
+	height: 460px; 
 }
 
 #what {
 	float: right;
 	width: 400px;
 	margin-left: 100px;
+	transition: width 2s;
 }
 
 #reference {
@@ -85,7 +77,7 @@ p {
 	margin-right: 25px;
 }
 
-.navbar ul {
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -98,11 +90,11 @@ p {
 	width: 100%;
   }
   
-.navbar li {
+nav li {
 	float: left;
 }
   
-.navbar li a {
+nav li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -111,7 +103,7 @@ p {
 	font-family: Afacad Flux, sans-serif;
 }
   
-.navbar li a:hover {
+nav li a:hover {
 	background-color: #0f50c1;
 }
 

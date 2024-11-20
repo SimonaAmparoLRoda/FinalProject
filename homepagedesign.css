@@ -1,9 +1,11 @@
+
 h1, h2{
 	font-family: Afacad Flux, sans-serif;
 	font-weight: bold;
 	margin-left: 100px;
 	margin-right: 100px;
 }
+
 
 h3 {
 	font-family: Afacad Flux, sans-serif;
@@ -28,6 +30,7 @@ p {
 	margin-right: 100px;
 	margin-top: 100px;
 	padding-bottom: 125px;
+
 }
 
 .last {
@@ -38,29 +41,23 @@ p {
 	margin-top: 100px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 header {
-	box-align: center;
-	height: 460px;
-	background: url(Images/swampybg.png) repeat;
+	background-image: url(Images/swampybg.png);
 	background-size: contain;
-	border-width: 0px;
-	max-width: 100%;
-}
-
-#what:hover {
-	width: 450px;
-}
-
-.logo {
-	height: 460px; 
+	display: block;
 }
 
 #what {
 	float: right;
 	width: 400px;
 	margin-left: 100px;
-	transition: width 2s;
 }
 
 #reference {
@@ -75,6 +72,10 @@ header {
 	width: 450px;
 	float: left;
 	margin-right: 25px;
+}
+
+.logo {
+	height: 400px;
 }
 
 nav ul {
@@ -107,7 +108,7 @@ nav li a:hover {
 	background-color: #0f50c1;
 }
 
-.active {
+nav li a:active {
 	background-color: #2962c6;
 }
 

@@ -1,5 +1,13 @@
 
-h1, h2{
+h1{
+	font-family: Afacad Flux, sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h2{
 	font-family: Afacad Flux, sans-serif;
 	font-weight: bold;
 	margin-left: 100px;
@@ -48,6 +56,46 @@ p {
   width: 50%;
 }
 
+.iconfb {
+	background: url('Images/iconsprite.jpg') no-repeat -56px -48px;
+	width: 138px;
+	height: 136px;
+	transform: scale(0.5, 0.5);
+}
+
+.iconig {
+	background: url('Images/iconsprite.jpg') no-repeat -239px -48px;
+	width: 137px;
+	height: 136px;
+	transform: scale(0.5, 0.5);
+}
+
+.icontwt {
+	background: url('Images/iconsprite.jpg') no-repeat -424px -48px;
+	width: 136px;
+	height: 136px;
+	transform: scale(0.5, 0.5);
+}
+
+.iconyt {
+	background: url('Images/iconsprite.jpg') no-repeat -56px -216px;
+	width: 136px;
+	height: 136px;
+	transform: scale(0.5, 0.5);
+}
+
+.sprite {
+	background: url('Images/sprite.png') no-repeat 0 0;
+	width: 100px;
+	height: 100px;
+	animation: varName 1s steps(11) infinite;
+	}
+	@keyframes varName{
+	from{background-position-y:0px;}
+	to{background-position-y:-1100px;}
+}
+
+
 header {
 	background-image: url(Images/swampybg.png);
 	background-size: contain;
@@ -58,6 +106,10 @@ header {
 	float: right;
 	width: 400px;
 	margin-left: 100px;
+}
+
+#what:hover {
+	transform:rotate(-20deg);
 }
 
 #reference {
@@ -74,8 +126,67 @@ header {
 	margin-right: 25px;
 }
 
+#duck {
+	position: absolute;
+	height: 100px;
+	bottom:203px;
+	left:965px;
+}
+
+#duck:hover {
+	transform:scale(2, 0.5);
+}
+
+.video {
+	margin-left: 100px;
+}
+
 .logo {
 	height: 400px;
+}
+
+.logo2 {
+	height: 300px;
+}
+
+.active {
+	background-color: #2962c6;
+}
+
+
+img[src$=".png"]{
+	transition: transform 2s;
+}
+
+aside {
+	float: right;
+	clear: top;
+	border-style: solid;
+	border-color: #62758b;
+	border-radius: 25px;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+
+aside ul {
+	list-style-type: none;
+	display: block;
+	margin-right: 100px;
+}
+
+aside ul li:nth-of-type(2){
+	background-color: #1082c8;
+	border-radius: 12px;
+	color: white;
+}
+
+div section ul{
+	list-style-type: none;
+	overflow:hidden;
+}
+
+div section ul li {
+	float: left;
 }
 
 nav ul {
@@ -85,9 +196,6 @@ nav ul {
 	overflow: hidden;
 	background-color: #1f98e2;
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 	width: 100%;
   }
   
@@ -101,15 +209,30 @@ nav li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 18px;
 	font-family: Afacad Flux, sans-serif;
 }
   
 nav li a:hover {
 	background-color: #0f50c1;
+	font-size: 19px;
+	transition: font-size 1s;
 }
 
-nav li a:active {
-	background-color: #2962c6;
+
+.resource {
+    margin-left: 100px;
+    font-family: Afacad Flux, sans-serif;
+	text-decoration: none;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.resource a:hover {
+    color:#2962c6;
+    text-decoration-line: underline;
+	font-size: 31px;
+	transition: font-size 1s;
 }
 
 footer {

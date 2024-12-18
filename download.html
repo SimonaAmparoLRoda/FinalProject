@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <p>waaaahhh go to resources bc its the only thing i made</p>
 
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="resources.html">Resources</a></li>
-    </ul>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8muv7iM2lmo?si=8Lj6GHGmQqiPLa6z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <head>
+    <link rel="stylesheet" href="homepagedesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    </head>
+
+    <nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a class="active" href="#">Download</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="solutions.html">Help the cause</a></li>
+		</ul>
+	</nav>
+
+    <header>
+		<img class="logo2" src="Images/logo.png" alt="Where's My Water?: A Real World Problem">
+	</header>
+
+    <aside>
+        <h2>Featured sound effects</h2>
+        <ul>
+        <li>
+            <p>Rubber ducky</p>
+            <img id="duck" src="Images/rubberduck.png" alt="Little rubber duck">
+            <audio controls>
+                <source src="Audio/duckquack.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+        <li>
+            <p>Buuuurp.</p>
+            <audio controls>
+                <source src="Audio/burpsound.mp3" type="audio/mpeg">
+            </audio>
+            <div>
+                <section class="sprite"></section>
+            </div>
+        </li>
+
+        </ul>
+    </aside>
+
+    <article class="last">
+        <h1>Where's My Water: Trailers and media</h1>
+        <h3>Trailer 1</h3>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/lIP1X_YELbo?si=Hbis3YiH7qAytqGW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Trailer 2</h3>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oYP_SbSBdwI?si=dPeRoXXhjuK3RMhG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+    <footer>
+        <h3>
+            Descriptions were obtained from me and ChatGPT. Disney please don't sue me thanks
+        </h3>
+    </footer>
+    </html>
 </html>

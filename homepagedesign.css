@@ -197,6 +197,9 @@ nav ul {
 	background-color: #1f98e2;
 	position: fixed;
 	width: 100%;
+	top: 0;
+	right: 0;
+	left:0;
   }
   
 nav li {

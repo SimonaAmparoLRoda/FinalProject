@@ -8,4 +8,4 @@ QUIZ SECTION
 - There are 5 questions with 4 choices each, pressing on an answer will show you if it's right or wrong
 - Press the 'next' button to proceed to the next question, there is is no 'previous' button since it already shows the correct answer
 - After submitting, you will see your score
-- You can press to try again.
+- You can press the 'try again' button to try again.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="everything.css">
+    <script defer src="quizscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a class="active" href="#">Quiz!</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="logo2" src="Images/logo.png" alt="Where's My Water?: A Real World Problem">
+    </header>
+
+    <div class="app">
+        <h1>Quiz on Water Scarcity</h1>
+        <div class="quiz">
+            <h2 id="question">Question text</h2>
+            <div id="answer-buttons">
+                <button class="butt"></button>
+                <button class="butt"></button>
+                <button class="butt"></button>
+                <button class="butt"></button>
+            </div>
+            <div class="nav-buttons">
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+                <button id="submit-button">Submit</button>
+            </div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Your Score: <span id="score">0</span>/5</h2>
+            <p id="feedback"></p>
+            <button onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

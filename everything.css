@@ -1,4 +1,5 @@
 
+
 h1{
 	font-family: Afacad Flux, sans-serif;
 	font-weight: bold;
@@ -248,4 +249,111 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
+}
+
+#A {
+	margin-left: 100px;
+}
+
+.app {
+    text-align: center;
+    margin: 50px auto;
+    width: 60%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app h1 {
+    font-size: 45px;
+    color: rgb(3, 11, 33);
+    font-weight: 700;
+    border-bottom: 1px solid #0e2c60;
+    padding-bottom: 20px;
+}
+
+.quiz h2 {
+    font-size: 39px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.butt {
+    background: #fff;
+    font-weight: 400;
+    width: 60%;
+    border: 2px solid #222;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 18px;
+	margin: 5px 0;
+}
+
+.butt:hover {
+    background-color: #62758b;
+    color: #fff;
+}
+
+.butt:disabled {
+    cursor: not-allowed;
+}
+
+#next-button, #prev-button, #submit-button {
+    background-color: #0e2c60;
+    color: #fff;
+    font-weight: 200;
+    width: 120px;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    border: none;
+	display:block;
+}
+
+#next-button:hover, #prev-button:hover, #submit-button:hover {
+    background-color: #093073;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#result h2 {
+    color: #0e2c60;
+}
+
+#result p {
+    font-size: 18px;
+}
+
+#result button {
+    background-color: #0e2c60;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#result button:hover {
+    background-color: #093073;
 }

@@ -28,12 +28,11 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let answered = false; 
+let answered = false; // Prevents multiple selections per question
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
-const prevButton = document.getElementById("prev-button");
 const submitButton = document.getElementById("submit-button");
 const resultContainer = document.getElementById("result");
 const scoreElement = document.getElementById("score");
@@ -44,7 +43,6 @@ function startQuiz() {
     score = 0;
     resultContainer.style.display = "none";
     nextButton.style.display = "none";
-    prevButton.style.display = "none";
     submitButton.style.display = "none";
     questionElement.style.display = "block";
     answerButtons.style.display = "block";
@@ -53,7 +51,7 @@ function startQuiz() {
 
 function loadQuestion() {
     resetState();
-    answered = false; 
+    answered = false; // Reset selection status
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.innerText = currentQuestion.question;
 
@@ -70,13 +68,12 @@ function loadQuestion() {
 
 function resetState() {
     nextButton.style.display = "none";
-    prevButton.style.display = "none";
     submitButton.style.display = "none";
     answerButtons.innerHTML = "";
 }
 
 function selectAnswer(selectedIndex, button) {
-    if (answered) return; 
+    if (answered) return; // Prevent multiple selections per question
     answered = true; 
 
     const correctIndex = questions[currentQuestionIndex].correct;
@@ -92,14 +89,13 @@ function selectAnswer(selectedIndex, button) {
     });
 
     if (selectedIndex === correctIndex) {
-        score++; 
+        score++; // Increment score if the answer is correct
     }
 
     updateNavButtons();
 }
 
 function updateNavButtons() {
-    prevButton.style.display = currentQuestionIndex > 0 ? "inline-block" : "none";
     nextButton.style.display = currentQuestionIndex < questions.length - 1 ? "inline-block" : "none";
     submitButton.style.display = currentQuestionIndex === questions.length - 1 ? "inline-block" : "none";
 }
@@ -109,23 +105,17 @@ nextButton.addEventListener("click", () => {
     loadQuestion();
 });
 
-prevButton.addEventListener("click", () => {
-    currentQuestionIndex--;
-    loadQuestion();
-});
-
 submitButton.addEventListener("click", showResults);
 
 function showResults() {
     questionElement.style.display = "none";
     answerButtons.style.display = "none";
     nextButton.style.display = "none";
-    prevButton.style.display = "none";
     submitButton.style.display = "none";
     resultContainer.style.display = "block";
 
     scoreElement.innerText = score;
-    feedbackElement.innerText = score === 5 ? "Perfect score!" : score >= 3 ? "Good job!" : "Keep learning!";
+    feedbackElement.innerText = score === 5 ? "Excellent!" : score >= 3 ? "Good job!" : "Keep learning!";
 }
 
 function restartQuiz() {

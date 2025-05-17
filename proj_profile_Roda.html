@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		FinalProject
+	</title>
+
+	<head>
+		<link rel="stylesheet" href="everything.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+	</head>
+
+	<nav>
+		<ul>
+			<li><a class="active" href="#">Profile</a></li>
+            <li><a href="home.html">Home</a></li>
+			<li><a href="download.html">Download</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="quiz.html">Quiz!</a></li>
+		</ul>
+	</nav>
+
+<body>
+    <header>
+		<img class="logo2" src="Images/logo.png" alt="Where's My Water?: A Real World Problem">
+	</header>
+
+
+  <main>
+    <section class="profile">
+        <img class="pfp" src="Images/profile.png" alt="Profile Picture">
+        <h2>Profile</h2>
+        <p><strong>First Name:</strong> <span id="profileFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="profileLastName"></span></p>
+        <p><strong>Email Address:</strong> <span id="profileEmail"></span></p>
+        <p><strong>Sex:</strong> <span id="profileSex"></span></p>
+        <p><strong>Why I Support:</strong> <span id="profileSupportReason"></span></p>
+        <button id="logOut" onclick="window.location.href='signup.html'">Log Out</button>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('profileFirstName').textContent = localStorage.getItem('firstName');
+    document.getElementById('profileLastName').textContent = localStorage.getItem('lastName');
+    document.getElementById('profileEmail').textContent = localStorage.getItem('email');
+    document.getElementById('profileSex').textContent = localStorage.getItem('sex');
+    document.getElementById('profileSupportReason').textContent = localStorage.getItem('supportReason');
+  </script>
+
+    <footer>
+		<h3>
+			Descriptions were obtained from me and ChatGPT. Disney please don't sue me thanks
+		</h3>
+	</footer>
+</body>
+</html>

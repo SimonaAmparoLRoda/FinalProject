@@ -13,4 +13,5 @@ QUIZ SECTION
 SIGNUP SECTION
 - insert "proj_signup_Roda.html" at the end of the URL to sign up
 
-CS this year was very interesting, I'm glad to have had Ma'am Maui as our teacher again :)
+CS this year was very interesting, I'm glad to have had Ma'am Maui as our teacher again :) 
+Thank you!

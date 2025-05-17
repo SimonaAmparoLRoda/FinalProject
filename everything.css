@@ -309,7 +309,7 @@ footer {
     cursor: not-allowed;
 }
 
-#next-button, #prev-button, #submit-button {
+#next-button, #submit-button {
     background-color: #0e2c60;
     color: #fff;
     font-weight: 200;
@@ -324,7 +324,7 @@ footer {
 	display:block;
 }
 
-#next-button:hover, #prev-button:hover, #submit-button:hover {
+#next-button:hover, #submit-button:hover {
     background-color: #093073;
 }
 
@@ -357,3 +357,73 @@ footer {
 #result button:hover {
     background-color: #093073;
 }
+
+.pfp {
+	width: 250px;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+.profile {
+	border: 2px solid #62758b;
+	border-radius: 12px;
+	margin: 100px;
+	padding: 20px;
+}
+
+#logOut {
+	background-color: #0e2c60;
+    color: #fff;
+    font-weight: 200;
+    width: 120px;
+    padding: 12px;
+    margin: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    border: none;
+	display:block;
+}
+
+.faq-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin: auto;
+  color: #006064;
+  margin-bottom: 10px;
+}
+
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #b2dfdb;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: #e0f7fa;
+}
+
+summary {
+  font-family: Afacad Flux, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #004d40;
+}
+
+summary:hover {
+  color: #006064;
+}
+
+details[open] {
+  background-color: #b2ebf2;
+  transition: 1s;
+}
+

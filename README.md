@@ -9,3 +9,8 @@ QUIZ SECTION
 - Press the 'next' button to proceed to the next question, there is is no 'previous' button since it already shows the correct answer
 - After submitting, you will see your score
 - You can press the 'try again' button to try again.
+
+SIGNUP SECTION
+- insert "proj_signup_Roda.html" at the end of the URL to sign up
+
+CS this year was very interesting, I'm glad to have had Ma'am Maui as our teacher again :)

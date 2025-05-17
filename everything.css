@@ -258,6 +258,7 @@ footer {
 .app {
     text-align: center;
     margin: 50px auto;
+	margin-bottom:100px;
     width: 60%;
     background: #f9f9f9;
     padding: 30px;

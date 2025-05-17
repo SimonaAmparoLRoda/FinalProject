@@ -1,46 +1,53 @@
-document.getElementById("signupForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("signupForm");
 
-  const fields = ["firstName", "lastName", "email", "password", "supportReason"];
-  let valid = true;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page refresh
 
-  fields.forEach((field) => {
-    const input = document.querySelector(`[name="${field}"]`);
-    const error = document.getElementById("error" + capitalize(field));
-    if (!input.value.trim()) {
-      error.textContent = "required";
+    let valid = true;
+
+    // List of required fields and their corresponding error span IDs
+    const requiredFields = [
+      { name: "firstName", errorId: "errorFirstName" },
+      { name: "lastName", errorId: "errorLastName" },
+      { name: "email", errorId: "errorEmail" },
+      { name: "password", errorId: "errorPassword" },
+      { name: "supportReason", errorId: "errorSupportReason" }
+    ];
+
+    // Validate text inputs
+    requiredFields.forEach(({ name, errorId }) => {
+      const input = form.querySelector(`[name="${name}"]`);
+      const errorSpan = document.getElementById(errorId);
+
+      if (!input.value.trim()) {
+        errorSpan.style.display = "inline";
+        valid = false;
+      } else {
+        errorSpan.style.display = "none";
+      }
+    });
+
+    // Validate sex (radio buttons)
+    const sexOptions = form.querySelectorAll('[name="sex"]');
+    const sexError = document.getElementById("errorSex");
+    const selected = Array.from(sexOptions).some(option => option.checked);
+
+    if (!selected) {
+      sexError.style.display = "inline";
       valid = false;
     } else {
-      error.textContent = "";
+      sexError.style.display = "none";
+    }
+
+    // If valid, store data and redirect
+    if (valid) {
+      localStorage.setItem("firstName", form.firstName.value);
+      localStorage.setItem("lastName", form.lastName.value);
+      localStorage.setItem("email", form.email.value);
+      localStorage.setItem("sex", form.querySelector('[name="sex"]:checked').value);
+      localStorage.setItem("supportReason", form.supportReason.value);
+      window.location.href = "proj_profile_Roda.html";
     }
   });
-
-  const sexOptions = document.getElementsByName("sex");
-  const sexError = document.getElementById("errorSex");
-  let sexValue = "";
-  for (let option of sexOptions) {
-    if (option.checked) {
-      sexValue = option.value;
-      break;
-    }
-  }
-  if (!sexValue) {
-    sexError.textContent = "required";
-    valid = false;
-  } else {
-    sexError.textContent = "";
-  }
-
-  if (valid) {
-    localStorage.setItem("firstName", document.querySelector('[name="firstName"]').value);
-    localStorage.setItem("lastName", document.querySelector('[name="lastName"]').value);
-    localStorage.setItem("email", document.querySelector('[name="email"]').value);
-    localStorage.setItem("sex", sexValue);
-    localStorage.setItem("supportReason", document.querySelector('[name="supportReason"]').value);
-    window.location.href = "profile.html";
-  }
 });
-
-function capitalize(word) {
-  return word.charAt(0).toUpperCase() + word.slice(1);
-}
